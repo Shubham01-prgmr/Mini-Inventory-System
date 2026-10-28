@@ -1,0 +1,27 @@
+body {
+  background: #f7f8fa;
+}
+
+.product-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.product-card .card-img-top {
+  background: #e9ecef;
+}
+
+.cart-line-img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Keep the offcanvas a sensible width on larger screens */
+@media (min-width: 576px) {
+  .offcanvas-cart {
+    --bs-offcanvas-width: 420px;
+  }
+}
